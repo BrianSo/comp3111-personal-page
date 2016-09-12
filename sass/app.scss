@@ -1,0 +1,43 @@
+@import './modal.scss';
+
+body{
+  margin:0;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: #fff;
+}
+body a{
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+  font-family: 'Text Me One', sans-serif;
+}
+p{
+  margin:0;
+}
+ul,label{
+  margin:0;
+  padding:0;
+}
+body a:hover{
+  text-decoration:none;
+}
+@media(max-width:768px) {
+  p {
+    letter-spacing: 0px;
+  }
+  p.agile-br {
+    margin-top: 0.8em;
+  }
+}
+
+@media(max-width:414px) {
+  p {
+    font-size: 0.9em;
+  }
+}

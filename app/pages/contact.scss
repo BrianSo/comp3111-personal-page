@@ -1,0 +1,102 @@
+@import "./input-effect.scss";
+
+.contact-left iframe {
+  width: 100%;
+  min-height: 32.5em;
+  border: none;
+}
+
+.styled-input.agile-styled-input-top {
+  margin-top: 0;
+}
+
+.contact {
+  input[type="text"] {
+    font-size: 1em;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+  }
+
+  textarea {
+    font-size: 1em;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+    min-height: 13em;
+  }
+
+  input[type="submit"] {
+    outline: none;
+    color: #fff;
+    padding: .8em 4em;
+    font-size: 1em;
+    margin: 1em 0 0 0;
+    -webkit-appearance: none;
+    background: #ec407a;
+    border: solid 1px #ec407a;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+
+    &:hover {
+      background-color: #1dadd3;
+      border-color: #1dadd3;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-left iframe {
+    min-height: 19em;
+  }
+
+  .contact-right {
+    margin-top: 2em;
+  }
+
+  .contact textarea {
+    min-height: 10em;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact textarea {
+    min-height: 8em;
+  }
+
+  .contact-left iframe {
+    min-height: 15em;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact input[type="submit"] {
+    padding: .6em 4em;
+    margin: 0.5em 0 0 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact input[type="submit"] {
+    padding: .5em 3em;
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,94 @@
+.styled-input {
+  width: 100%;
+  margin: 2em 0 1em;
+  position: relative;
+
+  label {
+    color: #1dadd3;
+    padding: 0.5em .9em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    pointer-events: none;
+    font-weight: 400;
+    font-size: 1em;
+    display: block;
+    line-height: 1em;
+  }
+
+  input ~ span {
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ec407a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 0.125s;
+    -moz-transition: all 0.125s;
+    transition: all 0.125s;
+  }
+
+  textarea ~ span {
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ec407a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 0.125s;
+    -moz-transition: all 0.125s;
+    transition: all 0.125s;
+    bottom: 5px;
+  }
+
+  input {
+    &:focus ~ label, &:valid ~ label {
+      font-size: 1.1em;
+      color: #ec407a;
+      top: -1.3em;
+      -webkit-transition: all 0.125s;
+      -moz-transition: all 0.125s;
+      -o-transition: all 0.125s;
+      -ms-transition: all 0.125s;
+      transition: all 0.125s;
+    }
+  }
+
+  textarea {
+    &:focus ~ label, &:valid ~ label {
+      font-size: 1.1em;
+      color: #ec407a;
+      top: -1.3em;
+      -webkit-transition: all 0.125s;
+      -moz-transition: all 0.125s;
+      -o-transition: all 0.125s;
+      -ms-transition: all 0.125s;
+      transition: all 0.125s;
+    }
+  }
+
+  input:focus {
+    &.styled-input textarea:focus {
+      outline: 0;
+    }
+
+    ~ span {
+      width: 100%;
+      -webkit-transition: all 0.075s;
+      -moz-transition: all 0.075s;
+      transition: all 0.075s;
+    }
+  }
+
+  textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s;
+    -moz-transition: all 0.075s;
+    transition: all 0.075s;
+  }
+}

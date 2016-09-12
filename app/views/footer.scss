@@ -1,0 +1,30 @@
+.footer {
+  padding: 2em 0;
+  text-align: center;
+  background: #1F1F1F;
+
+  p {
+    color: #fff;
+    font-size: 1.1em;
+
+    a {
+      color: #1dadd3;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .footer p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 384px) {
+  .footer {
+    padding: 2em 1em;
+  }
+}
