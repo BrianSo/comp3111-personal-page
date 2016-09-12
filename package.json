@@ -2,6 +2,12 @@
   "name": "brian-personal-web-page",
   "version": "0.0.1",
   "description": "Brian So's Web",
+  "repository":{
+    "type" : "git",
+    "url" : "https://github.com/BrianSo/comp3111-personal-page.git"
+  },
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
     "test": "webpack-dev-server --port 8000 --hot --progress --colors",
     "start": "http-server -p 3000 .",
