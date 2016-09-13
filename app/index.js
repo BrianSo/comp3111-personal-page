@@ -1,6 +1,7 @@
 import React from 'react';
 import TopNav from './views/top-nav';
 import Banner from './views/banner';
+import Info from './views/info';
 import Footer from './views/footer';
 
 import AboutPage from './pages/about.js';
@@ -15,6 +16,7 @@ const App = React.createClass({
         return <div>
             <TopNav/>
             <Banner/>
+            <Info/>
 
             <AboutPage/>
             <SkillsPage/>

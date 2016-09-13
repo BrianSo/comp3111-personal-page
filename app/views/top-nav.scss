@@ -3,6 +3,14 @@ $background: #80bfff;
 
 .top-nav {
   background: $background;
+  width: 100%;
+  height:72px;
+}
+.top-nav.fixed{
+  position: fixed;
+  z-index: 100;
+}
+.top-nav.use-space{
 }
 
 .nav > li {
@@ -97,6 +105,7 @@ ul.nav.navbar li a.w3ls-icon {
 @media(max-width:767px){
   .top-nav {
     text-align: center;
+    height:64px;
   }
   .navbar-default .navbar-toggle {
     border: none;

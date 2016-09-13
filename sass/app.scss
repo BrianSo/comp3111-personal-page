@@ -3,7 +3,7 @@
 body{
   margin:0;
   font-family: 'Roboto Condensed', sans-serif;
-  background: #fff;
+  background: #1F1F1F;
 }
 body a{
   transition: 0.5s all;
@@ -30,9 +30,6 @@ body a:hover{
 @media(max-width:768px) {
   p {
     letter-spacing: 0px;
-  }
-  p.agile-br {
-    margin-top: 0.8em;
   }
 }
 
