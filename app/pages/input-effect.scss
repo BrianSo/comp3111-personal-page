@@ -1,10 +1,12 @@
+@import '../../sass/theme.scss';
+
 .styled-input {
   width: 100%;
   margin: 2em 0 1em;
   position: relative;
 
   label {
-    color: #1dadd3;
+    color: $colorSecondary;
     padding: 0.5em .9em;
     position: absolute;
     top: 0;
@@ -23,7 +25,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: #ec407a;
+    background: $colorPrimary;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -36,7 +38,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: #ec407a;
+    background: $colorPrimary;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -49,7 +51,7 @@
   input {
     &:focus ~ label, &:valid ~ label {
       font-size: 1.1em;
-      color: #ec407a;
+      color: $colorPrimary;
       top: -1.3em;
       -webkit-transition: all 0.125s;
       -moz-transition: all 0.125s;
@@ -62,7 +64,7 @@
   textarea {
     &:focus ~ label, &:valid ~ label {
       font-size: 1.1em;
-      color: #ec407a;
+      color: $colorPrimary;
       top: -1.3em;
       -webkit-transition: all 0.125s;
       -moz-transition: all 0.125s;

@@ -1,3 +1,5 @@
+@import '../../sass/theme.scss';
+
 .gallery-row {
   padding: 0 3em;
 }
@@ -17,14 +19,14 @@
   transition: all 0.5s;
   opacity: 1;
   filter: alpha(opacity = 100);
-  border: 2px solid #22add3;
+  border: 2px solid $colorSecondary;
 
   img {
     width: 100%;
   }
 
   .view-caption {
-    background-color: rgba(236, 64, 122, 0.85);
+    background-color: transparentize($colorPrimary,0.15);
     border: 5px solid #fff;
     bottom: 0;
     color: #fff;

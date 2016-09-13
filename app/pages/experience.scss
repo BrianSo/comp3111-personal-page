@@ -1,3 +1,5 @@
+@import '../../sass/theme.scss';
+
 .experience-grids {
   width: 85%;
   margin: 0 auto;
@@ -6,10 +8,10 @@
 .experience-left {
   float: left;
   width: 30%;
-  background: #ec407a;
+  background: $colorPrimary;
   text-align: center;
   padding: 2em 0;
-  border: 2px solid #ec407a;
+  border: 2px solid $colorPrimary;
   -webkit-transition: .5s all;
   -moz-transition: .5s all;
   transition: .5s all;
@@ -20,7 +22,7 @@
 .experience-right {
   float: right;
   width: 70%;
-  border: 1px solid #ec407a;
+  border: 1px solid $colorPrimary;
   padding: 1.5em;
 }
 
@@ -41,7 +43,7 @@
 
 .experience-right h4 {
   font-size: 1.6em;
-  color: #1dadd3;
+  color: $colorSecondary;
   margin-bottom: 0.5em;
   font-weight: 900;
 }

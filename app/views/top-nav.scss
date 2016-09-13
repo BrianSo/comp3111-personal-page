@@ -1,8 +1,7 @@
-/*-- top-nav --*/
-$background: #80bfff;
+@import '../../sass/theme.scss';
 
 .top-nav {
-  background: $background;
+  background: $colorPrimary;
   width: 100%;
   height:72px;
 }
@@ -29,7 +28,7 @@ ul.nav.navbar {
     font-family: 'Text Me One', sans-serif;
 
     &:hover, &.active {
-      color: $background;
+      color: $colorPrimary;
       background: transparent;
       outline: none;
     }
@@ -114,7 +113,7 @@ ul.nav.navbar li a.w3ls-icon {
     border: none;
     box-shadow: none;
     position: absolute;
-    background: #99ccff;
+    background: lighten($colorPrimary,10%);
     width: 100%;
     z-index: 9;
   }

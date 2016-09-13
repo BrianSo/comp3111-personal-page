@@ -1,12 +1,9 @@
 .my-banner {
-  //position: absolute;
-  //height: 100%;
-  //width: 100%;
   .video {
     background: url(/public/images/cv.jpg) no-repeat;
     background-position: 0px 0px;
     text-align: left;
-    min-height: 100%;
+    //min-height: 100%;
     background-size: cover;
   }
 
@@ -76,7 +73,7 @@
   }
   @media(max-width: 480px) {
     .banner-text {
-      margin: 13em 0 6em;
+      margin: 13em 0 5em;
     }
     .banner-text h6 {
       font-size: 1em;
@@ -88,13 +85,13 @@
   }
   @media(max-width: 414px) {
     .banner-text {
-      margin: 23.5em 0 6em;
+      margin: 13em 0 4em;
       padding: 2em;
     }
   }
   @media(max-width: 384px) {
     .banner-text {
-      margin: 16.6em 0 6em;
+      margin: 12em 0 3em;
     }
     .banner-text h1 {
       font-size: 1.8em;
@@ -108,7 +105,7 @@
       font-size: 0.9em;
     }
     .banner-text {
-      margin: 15em 0 2.6em;
+      margin: 11em 0 2.6em;
       padding: 1.2em 1.5em;
     }
   }
