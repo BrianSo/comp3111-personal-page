@@ -3,7 +3,15 @@ import React from 'react';
 
 var AboutModal = React.createClass({
     getInitialState(){
-        return {};
+        var state = {
+            info:[
+                ["Major","Computer Science"],
+                ["University","HKUST","http://ust.hk"],
+                ["E-MAIL","briansostudio@gmail.com","mailto:briansostudio@gmail.com"],
+                ["Website","ihome.ust.hk/~khbso","http://ihome.ust.hk/~khbso"]
+            ]
+        };
+        return state;
     },
     render() {
         return (
@@ -18,42 +26,26 @@ var AboutModal = React.createClass({
                         <div className="modal-body modal-spa">
                             <div className="about">
                                 <div className="col-md-4 about-left ">
-                                    <img src="/public/images/img1.jpg" className="img-responsive" alt />
+                                    <img src="/public/images/brian.jpg" className="img-responsive" alt />
                                 </div>
                                 <div className="col-md-8 about-right wthree">
                                     <h3>Hi, i'm <span>Brian So </span></h3>
                                     <h4>Web Designer &amp; Developer </h4>
                                     <ul className="address">
-                                        <li>
-                                            <ul className="agileits-address-text ">
-                                                <li><b>D.O.B</b></li>
-                                                <li>23-06-1980</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <ul className="agileits-address-text">
-                                                <li><b>PHONE </b></li>
-                                                <li>+00 111 222 3333</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <ul className="agileits-address-text">
-                                                <li><b>ADDRESS </b></li>
-                                                <li>756 global Place, North Sydney, Canada.</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <ul className="agileits-address-text">
-                                                <li><b>E-MAIL </b></li>
-                                                <li><a href="mailto:example@mail.com"> mail@example.com</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <ul className="agileits-address-text">
-                                                <li><b>WEBSITE </b></li>
-                                                <li><a href="http://w3layouts.com">www.myresume.com</a></li>
-                                            </ul>
-                                        </li>
+                                        {
+                                            this.state.info.map((record,i)=>
+                                                <li key={i}>
+                                                    <ul className="agileits-address-text ">
+                                                        <li><b>{record[0]}</b></li>
+                                                        <li>{
+                                                            record[2] ?
+                                                                <a href={record[2]}> {record[1]}</a> :
+                                                                record[1]
+                                                        }</li>
+                                                    </ul>
+                                                </li>
+                                            )
+                                        }
                                     </ul>
                                 </div>
                                 <div className="clearfix"> </div>

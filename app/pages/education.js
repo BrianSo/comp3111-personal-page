@@ -2,6 +2,24 @@ import './education.scss';
 import React from 'react';
 
 var EducationModal = React.createClass({
+    getInitialState(){
+        return {
+            educations:[
+                {
+                    period:"2015 - Now",
+                    institution:"Hong Kong University of Science and Technology",
+                    program:"BEng in Computer Science",
+                    description:"Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at"
+                },
+                {
+                    period:"2014 - 2015",
+                    institution:"Community College of City University of Hong Kong",
+                    program:"ASc in Information System Developerment",
+                    description:"Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at"
+                }
+            ]
+        };
+    },
     render: function() {
         return (
 
@@ -14,28 +32,19 @@ var EducationModal = React.createClass({
                         </div>
                         <div className="modal-body modal-spa">
                             <div className="experience">
-                                <div className="experience-grids">
-                                    <div className="experience-left">
-                                        <h3>2011<span>(2 Years Course)</span> </h3>
-                                        <h5> University Name</h5>
-                                    </div>
-                                    <div className="experience-right">
-                                        <h4>Master of Web Design</h4>
-                                        <p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at</p>
-                                    </div>
-                                    <div className="clearfix"> </div>
-                                </div>
-                                <div className="experience-grids experience-grids-btm">
-                                    <div className="experience-left">
-                                        <h3>2009<span>(3 Years Course)</span></h3>
-                                        <h5> University Name</h5>
-                                    </div>
-                                    <div className="experience-right">
-                                        <h4>Diploma in Design</h4>
-                                        <p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at</p>
-                                    </div>
-                                    <div className="clearfix"> </div>
-                                </div>
+                                {this.state.educations.map(exp=>
+                                    <div className="experience-grids">
+                                        <div className="experience-left">
+                                            <h3>{exp.period}</h3>
+                                            <h5>{exp.institution}</h5>
+                                        </div>
+                                        <div className="experience-right">
+                                            <h4>{exp.program}</h4>
+                                            <p>{exp.description}</p>
+                                        </div>
+                                        <div className="clearfix"> </div>
+                                    </div>)
+                                }
                             </div>
                         </div>
                     </div>

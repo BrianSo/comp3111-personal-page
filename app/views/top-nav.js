@@ -23,7 +23,7 @@ var TopNav = React.createClass({
                                     <li><a href="#" data-toggle="modal" data-target="#education" className="w3ls-hover"><span data-letters="Education">Education </span></a></li>
                                     <li><a href="#" data-toggle="modal" data-target="#work" className="w3ls-hover"><span data-letters="Work">Work</span></a></li>
                                     <li><a href="#" data-toggle="modal" data-target="#contact" className="w3ls-hover"><span data-letters="Contact">Contact </span></a></li>
-                                    <li><a className="w3ls-icon" href="#"><span className="glyphicon glyphicon-save" /></a></li>
+                                    <li><a className="w3ls-icon" href="https://github.com/BrianSo/comp3111-personal-page.git"><i className="fa fa-2x fa-github" /></a></li>
                                 </ul>
                                 <div className="clearfix"> </div>
                             </div>

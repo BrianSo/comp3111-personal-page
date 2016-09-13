@@ -49,10 +49,10 @@
 }
 
 .experience-grids {
-  &.experience-grids-btm {
-    margin: 2em auto;
+  margin-bottom: 2em;
+  &:last-child{
+    margin-bottom: 0;
   }
-
   &:hover .experience-left {
     background: none;
   }
@@ -122,8 +122,8 @@
     width: 100%;
   }
 
-  .experience-grids.experience-grids-btm {
-    margin: 1.5em auto;
+  .experience-grids {
+    margin-bottom: 1.5em;
   }
 
   .experience-left h3 span {
