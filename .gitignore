@@ -1,9 +1,7 @@
 node_modules/*
 npm-debug.log
-public/cms.js
-public/cms.js.map
-public/model.js
-public/model.js.map
+public/app.js
+public/app.js.map
 
 
 ###################################################
