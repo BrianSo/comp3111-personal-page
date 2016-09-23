@@ -1,51 +1,12 @@
 import './work.scss';
 import React from 'react';
+import Data from '../data';
 
 var GalleryModal = React.createClass({
     getInitialState(){
-        var state = {
-            works:[
-                {
-                    img:"/public/images/g1.jpg",
-                    description:"Lorem Ipsum is simply dummy the when an unknown galley"
-                },
-                {
-                    img:"/public/images/g2.jpg",
-                    description:"Lorem Ipsum is simply dummy the when an unknown galley"
-                },
-                {
-                    img:"/public/images/g3.jpg",
-                    description:"Lorem Ipsum is simply dummy the when an unknown galley"
-                },
-                {
-                    img:"/public/images/g4.jpg",
-                    description:"Lorem Ipsum is simply dummy the when an unknown galley"
-                },
-                {
-                    img:"/public/images/g5.jpg",
-                    description:"Lorem Ipsum is simply dummy the when an unknown galley"
-                },
-                {
-                    img:"/public/images/g6.jpg",
-                    description:"Lorem Ipsum is simply dummy the when an unknown galley"
-                },
-                {
-                    img:"/public/images/g3.jpg",
-                    description:"Lorem Ipsum is simply dummy the when an unknown galley"
-                },
-                {
-                    img:"/public/images/g2.jpg",
-                    description:"Lorem Ipsum is simply dummy the when an unknown galley"
-                },
-                {
-                    img:"/public/images/g1.jpg",
-                    description:"Lorem Ipsum is simply dummy the when an unknown galley"
-                }
-            ]
+        return {
+            works:Data.works
         };
-
-
-        return state;
     },
     render: function() {
         return (

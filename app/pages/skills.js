@@ -1,35 +1,11 @@
 import './skills.scss';
 import React from 'react';
-
+import Data from '../data';
 var SkillsModal = React.createClass({
     getInitialState(){
         return {
-            sections:[
-                {
-                    name:"Languages",
-                    icon:"glyphicon-cog",
-                    skills:[
-                        ["Javascript(ES6, Node.js)","95%"],
-                        ["CSS3","85%"],
-                        ["Java","85%"],
-                        ["C++","70%"],
-                        ["Objective-C","70%"],
-                        ["C#","60%"],
-                        ["PHP","55%"]
-                    ]
-                },
-                {
-                    name:"Professional Skills",
-                    icon:"glyphicon-briefcase",
-                    skills:[
-                        ["Communication","90%"],
-                        ["Project Management","90%"],
-                        ["Leadership","85%"],
-                        ["Confidence","85%"],
-                    ]
-                }
-            ]
-        }
+            sections: Data.skillSections
+        };
     },
     render: function() {
         return (

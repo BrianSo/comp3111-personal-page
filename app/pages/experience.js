@@ -1,30 +1,12 @@
 import './experience.scss';
 import React from 'react';
+import Data from '../data';
 
 var ExperienceModal = React.createClass({
     getInitialState(){
         return {
-            experiences:[
-                {
-                    period:"2015 - Now",
-                    company:"BrianSo Studio",
-                    title:"Chairman",
-                    description:"Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at"
-                },
-                {
-                    period:"2014 - 2015",
-                    company:"Google Inc.",
-                    title:"Software Engineer",
-                    description:"Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at"
-                },
-                {
-                    period:"2013 - 2014",
-                    company:"Oracle Inc.",
-                    title:"Web App Developer",
-                    description:"Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at"
-                }
-            ]
-        };
+            experiences:Data.experiences
+        }
     },
     render: function() {
         return (

@@ -1,17 +1,13 @@
 import './about.scss';
 import React from 'react';
 
+import Data from '../data';
+
 var AboutModal = React.createClass({
     getInitialState(){
-        var state = {
-            info:[
-                ["Major","Computer Science"],
-                ["University","HKUST","http://ust.hk"],
-                ["E-MAIL","briansostudio@gmail.com","mailto:briansostudio@gmail.com"],
-                ["Website","ihome.ust.hk/~khbso","http://ihome.ust.hk/~khbso"]
-            ]
+        return {
+            info: Data.info
         };
-        return state;
     },
     render() {
         return (

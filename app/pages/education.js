@@ -1,24 +1,11 @@
 import './education.scss';
 import React from 'react';
-
+import Data from '../data';
 var EducationModal = React.createClass({
     getInitialState(){
         return {
-            educations:[
-                {
-                    period:"2015 - Now",
-                    institution:"Hong Kong University of Science and Technology",
-                    program:"BEng in Computer Science",
-                    description:"Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at"
-                },
-                {
-                    period:"2014 - 2015",
-                    institution:"Community College of City University of Hong Kong",
-                    program:"ASc in Information System Developerment",
-                    description:"Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at"
-                }
-            ]
-        };
+            educations:Data.educations
+        }
     },
     render: function() {
         return (
