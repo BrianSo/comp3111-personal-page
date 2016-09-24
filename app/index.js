@@ -10,6 +10,7 @@ import ExperiencePage from './pages/experience.js';
 import EducationPage from './pages/education.js';
 import WorkPage from './pages/work.js';
 import ContactPage from './pages/contact.js';
+import ThisSitePage from './pages/this-site.js';
 
 const App = React.createClass({
     render(){
@@ -23,6 +24,7 @@ const App = React.createClass({
             <ExperiencePage/>
             <EducationPage/>
             <WorkPage/>
+            <ThisSitePage/>
             <ContactPage/>
 
             <Footer/>
