@@ -2,9 +2,9 @@
   "name": "brian-personal-web-page",
   "version": "0.0.1",
   "description": "Brian So's Web",
-  "repository":{
-    "type" : "git",
-    "url" : "https://github.com/BrianSo/comp3111-personal-page.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrianSo/comp3111-personal-page.git"
   },
   "license": "UNLICENSED",
   "private": true,
@@ -31,6 +31,7 @@
   "dependencies": {
     "babel-preset-react": "^6.11.1",
     "classnames": "^2.2.5",
+    "jquery": "^3.1.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1"
   }

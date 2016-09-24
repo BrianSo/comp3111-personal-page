@@ -1,14 +1,26 @@
 import './this-site.scss';
 import React from 'react';
 import Modal from  '../views/modal';
+import jquery from 'jquery';
 
 var ThisSiteModal = React.createClass({
     getInitialState(){
         return {
-            code:""
+            commits:[]
         };
     },
+    componentDidMount(){
+        jquery.ajax("https://api.github.com/repos/brianso/comp3111-personal-page/commits")
+            .then((data)=>{
+                this.setState({
+                    commits:data
+                })
+            });
+    },
     render: function() {
+        function formatDate(d){
+            return new Date(d).toLocaleDateString();
+        }
         return (
             <Modal title="About this site" id="this-site">
                 <div className="this-site">
@@ -64,6 +76,16 @@ export default Banner;`}</pre>
                         <p><span className="numbering">2. </span> Then to modify the css styles to scss, and makes the theme color as a variable so it can be changes easily later. Using react and scss makes every thing as a component, increasing the reusability of code and maintenance efficiency.</p>
                         <p><span className="numbering">3. </span> The page is then added the three column section under the video using the bootstrap gird system</p>
                         <p><span className="numbering">4. </span> Lastly added this explanation page and many elements in here are styled by bootstrap too!</p>
+                    </div>
+                    <h3><i className="fa fa-clock-o" />Github Commits</h3>
+                    <div className="container">
+                        <ul>
+                            {this.state.commits.map((commit,i)=>{
+                                return <li key={i}>
+                                        <a href={commit.commit.url}>{commit.commit.message} - {formatDate(commit.commit.committer.date)}</a>
+                                </li>
+                            })}
+                        </ul>
                     </div>
                 </div>
             </Modal>
