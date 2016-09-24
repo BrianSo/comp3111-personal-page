@@ -5,7 +5,7 @@ var Banner = React.createClass({
     render: function() {
         return (
             <div className="my-banner">
-                <div className="video" data-vide-bg="public/video/cv">
+                <div className="video" data-vide-bg="public/video/cv" data-vide-options="posterType: png, muted: true">
                     <div className="container">
                         <div className="banner-text agileinfo-text">
                             <h1>Brian So</h1>
