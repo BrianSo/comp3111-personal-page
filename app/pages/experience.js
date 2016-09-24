@@ -13,8 +13,8 @@ var ExperienceModal = React.createClass({
         return (
             <Modal title="My Experience" id="experience">
                 <div className="experience w3-agileits-info">
-                    {this.state.experiences.map(exp=>
-                        <div className="experience-grids">
+                    {this.state.experiences.map((exp,i)=>
+                        <div className="experience-grids" key={i}>
                             <div className="experience-left">
                                 <h3>{exp.period}</h3>
                                 <h5>{exp.company}</h5>

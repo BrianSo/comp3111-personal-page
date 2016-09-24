@@ -14,8 +14,8 @@ var GalleryModal = React.createClass({
             <Modal title="My Work" id="work">
                 <div className="gallery">
                     <div className="gallery-row">
-                        {this.state.works.map(work=>
-                            <div className="col-md-4 gallery-grids">
+                        {this.state.works.map((work,i)=>
+                            <div className="col-md-4 gallery-grids" key={i}>
                                 <div className="gallery-w3ls-hover">
                                     <a href={work.img} data-lightbox="example-set" data-title={work.description}>
                                         <img src={work.img} className="img-responsive zoom-img" alt />
