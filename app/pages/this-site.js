@@ -46,6 +46,8 @@ var ThisSiteModal = React.createClass({
                             <dd>This most popular features in bootstrap is employed in the main page, under the video, to show the three emphasis of my facts</dd>
                             <dt>Modal</dt>
                             <dd>All the popup are using bootstrap modal actually</dd>
+                            <dt>Linked items</dt>
+                            <dd>The Linked items is implemented in the github commit section. It uses the classes <code>list-group</code> and <code>list-group-item</code>. </dd>
                         </dl>
                     </div>
                     <h3><i className="fa fa-plus-circle" />What's new</h3>
@@ -75,7 +77,8 @@ var Banner = React.createClass({
 export default Banner;`}</pre>
                         <p><span className="numbering">2. </span> Then to modify the css styles to scss, and makes the theme color as a variable so it can be changes easily later. Using react and scss makes every thing as a component, increasing the reusability of code and maintenance efficiency.</p>
                         <p><span className="numbering">3. </span> The page is then added the three column section under the video using the bootstrap gird system</p>
-                        <p><span className="numbering">4. </span> Lastly added this explanation page and many elements in here are styled by bootstrap too!</p>
+                        <p><span className="numbering">4. </span> Added this explanation page and many elements in here are styled by bootstrap too!</p>
+                        <p><span className="numbering">5. </span> Added the github commit section which is pulling the data from github.</p>
                     </div>
                     <h3><i className="fa fa-clock-o" />Github Commits</h3>
                     <div className="container">
