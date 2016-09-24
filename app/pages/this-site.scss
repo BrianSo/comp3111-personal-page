@@ -1,4 +1,28 @@
+@import '../../sass/theme.scss';
+
 .this-site{
   color: white;
   width: 100%;
+  h3{
+    i.fa{
+      width: 1em;
+      margin-right: 0.4em;
+    }
+    margin-bottom: 0.5em;
+    color: $colorSecondary
+  }
+  dl{
+    dt{
+      color: $colorPrimary;
+    }
+  }
+  .numbering{
+    font-size: 1.5em;
+    color: $colorPrimary
+  }
+  @media (min-width: 768px){
+    .container{
+      width:inherit;
+    }
+  }
 }
