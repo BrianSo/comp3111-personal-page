@@ -4,7 +4,6 @@ import React from 'react';
 var ThisSiteModal = React.createClass({
     getInitialState(){
         return {
-            works:Data.works
         };
     },
     render: function() {
