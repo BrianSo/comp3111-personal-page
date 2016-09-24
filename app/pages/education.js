@@ -13,8 +13,8 @@ var EducationModal = React.createClass({
         return (
             <Modal title="My Qualification" id="education">
                 <div className="experience">
-                    {this.state.educations.map(exp=>
-                        <div className="experience-grids">
+                    {this.state.educations.map((exp,i)=>
+                        <div className="experience-grids" key={i}>
                             <div className="experience-left">
                                 <h3>{exp.period}</h3>
                                 <h5>{exp.institution}</h5>

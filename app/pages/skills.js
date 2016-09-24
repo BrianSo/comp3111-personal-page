@@ -13,10 +13,10 @@ var SkillsModal = React.createClass({
         return (
             <Modal title="My Skills" id="skill">
                 <div className="skills">
-                    {this.state.sections.map(section=>
-                        <div className="col-md-6 bar-grids">
+                    {this.state.sections.map((section,i)=>
+                        <div className="col-md-6 bar-grids" key={i}>
                             <h4><span className={`glyphicon ${section.icon}`} />{section.name}</h4>
-                            {section.skills.map(skill=><div>
+                            {section.skills.map((skill,i)=><div key={i}>
                                 <h6>{skill[0]}<span> {skill[1]} </span></h6>
                                 <div className="progress">
                                     <div className="progress-bar progress-bar-striped active" style={{width: skill[1]}}>
