@@ -79,13 +79,11 @@ export default Banner;`}</pre>
                     </div>
                     <h3><i className="fa fa-clock-o" />Github Commits</h3>
                     <div className="container">
-                        <ul>
+                        <div className="list-group">
                             {this.state.commits.map((commit,i)=>{
-                                return <li key={i}>
-                                        <a href={commit.commit.url}>{commit.commit.message} - {formatDate(commit.commit.committer.date)}</a>
-                                </li>
+                                return <a className="list-group-item" key={i} href={commit.commit.url}>{commit.commit.message} - {formatDate(commit.commit.committer.date)}</a>
                             })}
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </Modal>
