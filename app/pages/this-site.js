@@ -1,5 +1,6 @@
 import './this-site.scss';
 import React from 'react';
+import Modal from  '../views/modal';
 
 var ThisSiteModal = React.createClass({
     getInitialState(){
